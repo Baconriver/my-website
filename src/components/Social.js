@@ -1,14 +1,22 @@
 const Social = () => {
-    return (
-        <div className="social">
-            <h2>Socials</h2>
+  return (
+    <div className="social">
+      <h2>Socials</h2>
 
-            <a href="" className="button">john@email.com</a>
-            <a href="https://twitter.com/" className="button">Twitter</a>
-            <a href="https://www.linkedin.com/" className="button">LinkedIn</a>
-            <a href="https://github.com/" className="button">GitHub</a>
-        </div>
-    );
-}
+      <a href="" className="button">
+        henryjiangjh@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/hejianghenry/" className="button">
+        LinkedIn
+      </a>
+      <a href="https://github.com/Baconriver" className="button">
+        GitHub
+      </a>
+      <a href="" className="button">
+        Resume
+      </a>
+    </div>
+  );
+};
 
 export default Social;

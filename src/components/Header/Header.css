@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.header img {
+  max-width: 300px;
+  height: auto;
+
+  margin: 20px auto;
+
+  border-radius: 50%;
+}
+
+.header-content {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 48px;
+}
+
+.header-content p {
+  font-size: 32px;
+}
+
+.header-content button {
+  margin: 25px auto 0;
+}

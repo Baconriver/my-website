@@ -21,7 +21,7 @@ code {
 }
 
 .App {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -36,54 +36,22 @@ code {
   padding: 0 25px;
 } */
 
-.header,
+.header {
+  padding: 100px 200px;
+  height: 100vh;
+}
+
 .about,
 .projects,
 .experience,
 .social,
 .footer {
-  padding: 50px 25px 25px;
+  padding: 100px 200px;
+  height: 500px;
 }
 
 .navbar {
   padding: 10px;
-}
-
-/* ------------------------------------------------------ */
-/* -- Header -- */
-
-.header {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-  text-align: center;
-}
-
-.header img {
-  max-width: 300px;
-  height: auto;
-
-  margin: 20px auto;
-
-  border-radius: 50%;
-}
-
-.header__content {
-  width: 400px;
-  margin: 0 auto;
-}
-
-.header__content h1 {
-  font-size: 48px;
-}
-
-.header__content p {
-  font-size: 32px;
-}
-
-.header__content button {
-  margin: 25px auto 0;
 }
 
 /* ------------------------------------------------------ */
