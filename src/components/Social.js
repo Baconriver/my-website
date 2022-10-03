@@ -1,6 +1,6 @@
 const Social = () => {
   return (
-    <div className="social">
+    <div className="social" id="socials">
       <h2>Socials</h2>
 
       <a href="" className="button">
