@@ -1,16 +1,18 @@
+import selfie from "../../assets/selfie.jpg";
+import "./About.css";
 const About = () => {
   return (
     <section className="about" id="about">
       <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-        pariatur odio. Maxime, labore nihil illo ea voluptate suscipit aliquid
-        animi possimus laudantium fugit obcaecati harum? Assumenda maiores nam
-        magnam animi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eaque voluptatibus vitae, rem corrupti id consectetur! Sapiente
-        laboriosam nam excepturi exercitationem natus unde, harum consequatur
-        vero amet consectetur quod sunt autem!
-      </p>
+      <div className="about-container">
+        <p className="about-text">
+          I'm a passionate full stack developer lives in the Great Adelaide
+          Area. With 4 years of full stack web development experience, I'm
+          highly confident to handle any tasks during the whole web development
+          process.
+        </p>
+        <img src={selfie} alt="selfie" className="selfie"></img>
+      </div>
     </section>
   );
 };

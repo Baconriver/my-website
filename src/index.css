@@ -41,11 +41,16 @@ code {
   height: 100vh;
 }
 
-.about,
+.about {
+  padding: 100px 200px;
+  height: 100vh;
+}
+
 .projects,
 .experience,
 .social,
-.footer {
+.footer,
+.contact {
   padding: 100px 200px;
   height: 500px;
 }
@@ -55,109 +60,7 @@ code {
 }
 
 /* ------------------------------------------------------ */
-/* -- About -- */
-
-.about h2 {
-  font-size: 42px;
-  margin: 25px auto;
-}
-
-.about p {
-  font-size: 18px;
-  line-height: 130%;
-  max-width: 75ch;
-}
-
-/* ------------------------------------------------------ */
 /* -- Projects -- */
-
-.projects h2 {
-  font-size: 42px;
-  margin: 25px auto;
-}
-
-.projects p {
-  font-size: 18px;
-  line-height: 130%;
-  max-width: 50ch;
-}
-
-.projects__cards {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.projects__card {
-  max-width: 350px;
-
-  padding: 20px;
-
-  border: 1px solid #0088bb;
-  border-radius: 8px;
-}
-
-.projects__card h3 {
-  font-size: 32px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.projects__card p {
-  font-size: 16px;
-  margin: 20px 0;
-}
-
-.projects__card img {
-  width: 100%;
-  height: auto;
-  margin: 20px 0 10px;
-
-  border-radius: 8px;
-}
-
-.projects__card .button {
-  margin: 10px 5px 0;
-}
-
-/* ------------------------------------------------------ */
-/* -- Education/Experience -- */
-
-.experience h2 {
-  font-size: 42px;
-  margin: 25px auto;
-}
-
-.experience ul {
-  margin: 0 0 10px 50px;
-}
-
-.experience li {
-  font-size: 18px;
-  line-height: 130%;
-  margin: 15px auto;
-}
-
-/* ------------------------------------------------------ */
-/* -- Social Media -- */
-
-.social h2 {
-  font-size: 42px;
-  margin: 25px auto;
-}
-
-.social .button {
-  margin: 0 15px;
-}
-
-/* ------------------------------------------------------ */
-/* -- Footer -- */
-.footer {
-  margin: 0 auto;
-  text-align: center;
-}
 
 /* ------------------------------------------------------ */
 /* -- HTML COMPONENTS: BUTTON -- */

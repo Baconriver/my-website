@@ -1,0 +1,14 @@
+.experience h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.experience ul {
+  margin: 0 0 10px 50px;
+}
+
+.experience li {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 15px auto;
+}

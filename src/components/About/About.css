@@ -1,0 +1,24 @@
+.selfie {
+  width: 400px;
+  height: auto;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 75ch;
+}
