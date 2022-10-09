@@ -47,6 +47,10 @@ const Experience = () => {
           <i>University of Adelaide</i> -{" "}
           <strong>Master of Software Engineering</strong>, Jul 2015-Dec 2017
         </li>
+        <li>
+          <i>Hong Kong Baptist University</i> -{" "}
+          <strong>Bachelor of Computer Science</strong>, Jul 2011-Jun 2015
+        </li>
       </ul>
     </div>
   );

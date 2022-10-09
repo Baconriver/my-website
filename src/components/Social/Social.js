@@ -1,28 +1,33 @@
 import "./Social.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Social = () => {
   return (
     <div className="social" id="socials">
       <h2>Socials</h2>
 
       <a href="" className="button">
-        henryjiangjh@gmail.com
+        <FontAwesomeIcon icon={faEnvelope} />
       </a>
       <a
         href="https://www.linkedin.com/in/hejianghenry/"
         className="button"
         target="_blank"
+        rel="noreferrer"
       >
-        LinkedIn
+        <FontAwesomeIcon icon={faLinkedin} />
       </a>
       <a
         href="https://github.com/Baconriver"
         className="button"
         target="_blank"
+        rel="noreferrer"
       >
-        GitHub
+        <FontAwesomeIcon icon={faGithub} />
       </a>
       <a href="" className="button">
-        Resume
+        <FontAwesomeIcon icon={faFileLines} />
       </a>
     </div>
   );

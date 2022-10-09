@@ -41,50 +41,16 @@ code {
   height: 100vh;
 }
 
-.about {
-  padding: 100px 200px;
-  height: 100vh;
-}
-
-.projects,
 .experience,
 .social,
+.contact,
 .footer,
-.contact {
-  padding: 100px 200px;
-  height: 500px;
+.projects,
+.about {
+  padding: 50px 200px;
+  height: auto;
 }
 
 .navbar {
   padding: 10px;
-}
-
-/* ------------------------------------------------------ */
-/* -- Projects -- */
-
-/* ------------------------------------------------------ */
-/* -- HTML COMPONENTS: BUTTON -- */
-.button {
-  display: inline-block;
-
-  background: #12bdf3;
-
-  padding: 15px 50px;
-
-  border: none;
-  border-radius: 8px;
-
-  font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
-
-  cursor: pointer;
-
-  transition: all 250ms ease;
-}
-
-.button:hover {
-  background: #0088bb;
-  color: #ffffff;
 }

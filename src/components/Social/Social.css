@@ -4,5 +4,22 @@
 }
 
 .social .button {
-  margin: 0 15px;
+  margin: 0 5px;
+}
+
+.button {
+  display: inline-block;
+  background: #12bdf3;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.button:hover {
+  background: #0088bb;
+  color: #ffffff;
 }
