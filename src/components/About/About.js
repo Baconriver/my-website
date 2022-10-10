@@ -7,8 +7,8 @@ const About = () => {
       <div className="about-container">
         <p className="about-text">
           I'm a passionate full stack developer lives in the Great Adelaide
-          Area. With 4 years of full stack web development experience, I'm
-          highly confident to handle any tasks during the whole web development
+          Area. With nearly 5 years of full stack web development experience,
+          I'm confident to handle any tasks during the whole web development
           process.
         </p>
         <img src={selfie} alt="selfie" className="selfie"></img>

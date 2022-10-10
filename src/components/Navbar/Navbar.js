@@ -23,15 +23,21 @@ const Navbar = () => {
         >
           Experience
         </div>
+        {/* <div className="navbar-socials-button" onClick={scrollTo("projects")}>
+          My projects
+        </div> */}
         <div
           className="navbar-socials-button"
           onClick={() => scrollTo("socials")}
         >
           Socials
         </div>
-        {/* <div className="navbar-socials-button" onClick={scrollTo("cool-stuff")}>
-          Cool stuff
-        </div> */}
+        <div
+          className="navbar-socials-button"
+          onClick={() => scrollTo("contact")}
+        >
+          Contact me
+        </div>
       </div>
     </div>
   );

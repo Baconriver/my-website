@@ -5,7 +5,7 @@ import aave from "../assets/aave.png";
 import "./Projects.css";
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2>My Projects</h2>
 
       <div className="projects__cards">
@@ -18,13 +18,19 @@ const Projects = () => {
             ratione rerum dolorem.
           </p>
 
-          <a href="https://uniswap.org/" target="_blank" className="button">
+          <a
+            href="https://uniswap.org/"
+            target="_blank"
+            className="button"
+            rel="noreferrer"
+          >
             Site
           </a>
           <a
             href="https://github.com/Uniswap/v2-core"
             target="_blank"
             className="button"
+            rel="noreferrer"
           >
             Code
           </a>
@@ -43,6 +49,7 @@ const Projects = () => {
             href="https://compound.finance/"
             target="_blank"
             className="button"
+            rel="noreferrer"
           >
             Site
           </a>
@@ -50,6 +57,7 @@ const Projects = () => {
             href="https://github.com/compound-finance/compound-protocol"
             target="_blank"
             className="button"
+            rel="noreferrer"
           >
             Code
           </a>
@@ -64,13 +72,19 @@ const Projects = () => {
             ratione rerum dolorem.
           </p>
 
-          <a href="https://aave.com/" target="_blank" className="button">
+          <a
+            href="https://aave.com/"
+            target="_blank"
+            className="button"
+            rel="noreferrer"
+          >
             Site
           </a>
           <a
             href="https://github.com/aave/aave-v3-core"
             target="_blank"
             className="button"
+            rel="noreferrer"
           >
             Code
           </a>
