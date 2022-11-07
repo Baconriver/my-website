@@ -67,7 +67,6 @@ const Contact = () => {
           })}
         />
         {errors?.email?.type === "required" && <p>Please enter your email</p>}
-
         {errors?.email?.type === "pattern" && <p>Wrong Email pattern</p>}
         <textarea
           id="contact-content"
