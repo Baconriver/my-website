@@ -1,7 +1,7 @@
 import "./Header.css";
 const Header = () => {
   return (
-    <section className="header">
+    <section className="header-section">
       {/* <img src={profile} alt="Henry Jiang" /> */}
 
       <div className="header-content">

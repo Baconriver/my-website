@@ -1,13 +1,19 @@
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../assets/constants";
-import { Form, Button, Ref } from "semantic-ui-react";
+import { Form, Button, Ref, Message } from "semantic-ui-react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const form = useRef();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
@@ -18,78 +24,66 @@ const Contact = () => {
         console.log(error.text);
       }
     );
-  };
+  }
 
   return (
     <section className="contact" id="contact">
       <h2>Contact me</h2>
-      {/* <div className="contact-container">
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="contact-name">
-            <label for="contact-name">Name: </label>
-            <input id="contact-name" type="text" name="name" />
-          </div>
-          <div className="contact-mobile">
-            <label for="contact-mobile">Mobile: </label>
-            <input id="contact-mobile" type="number" name="mobile" />
-          </div>
-          <div className="contact-email">
-            <label for="contact-email">Email: </label>
-            <input id="contact-email" type="email" name="email" />
-          </div>
-          <div className="contact-content">
-            <label for="contact-content">Message: </label>
-            <textarea
-              id="contact-content"
-              name="message"
-              maxLength={2000}
-              placeholder="Something here..."
-            ></textarea>
-          </div>
-          <input type="submit" value="Send" />
-        </form>
-      </div> */}
-      <Ref innerRef={form}>
-        <Form onSubmit={sendEmail}>
-          <Form.Field>
-            <label for="contact-name">Name</label>
-            <input
-              placeholder="Name"
-              id="contact-name"
-              type="text"
-              name="name"
-            />
-          </Form.Field>
-          <Form.Field>
-            <label for="contact-mobile">Mobile</label>
-            <input
-              placeholder="Mobile"
-              id="contact-mobile"
-              type="text"
-              name="mobile"
-            />
-          </Form.Field>
-          <Form.Field>
-            <label for="contact-email">Email</label>
-            <input
-              placeholder="Email"
-              id="contact-email"
-              type="email"
-              name="email"
-            />
-          </Form.Field>
-          <Form.Field>
-            <label for="contact-content">Message</label>
-            <textarea
-              id="contact-content"
-              name="message"
-              maxLength={2000}
-              placeholder="Message"
-            ></textarea>
-          </Form.Field>
-          <Button type="submit">Send</Button>
-        </Form>
-      </Ref>
+      <form onSubmit={handleSubmit(sendEmail)}>
+        <input
+          id="contact-name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          {...register("name", {
+            required: true,
+            maxLength: 20,
+            pattern: /^[A-Za-z ]+$/i,
+          })}
+        />
+        {errors?.name?.type === "required" && <p>Please enter your name</p>}
+        {errors?.name?.type === "maxLength" && (
+          <p>Name cannot exceed 20 characters</p>
+        )}
+        {errors?.name?.type === "pattern" && (
+          <p>Alphabetical characters only</p>
+        )}
+        <input
+          placeholder="Mobile"
+          id="contact-mobile"
+          type="text"
+          name="mobile"
+          {...register("mobile", {
+            pattern: /^[0-9]+$/i,
+          })}
+        />
+        {errors?.mobile?.type === "pattern" && <p>Numberic only </p>}
+        <input
+          placeholder="Email"
+          id="contact-email"
+          type="email"
+          name="email"
+          {...register("email", {
+            required: true,
+            pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+          })}
+        />
+        {errors?.email?.type === "required" && <p>Please enter your email</p>}
+
+        {errors?.email?.type === "pattern" && <p>Wrong Email pattern</p>}
+        <textarea
+          id="contact-content"
+          name="message"
+          placeholder="Something to say..."
+          {...register("message", {
+            required: true,
+            maxLength: 2000,
+          })}
+        />
+        {errors?.name?.type === "required" && <p>Please enter your message</p>}
+        {errors?.name?.type === "maxLength" && <p>Message is too long</p>}
+        <input type="submit" />
+      </form>
     </section>
   );
 };

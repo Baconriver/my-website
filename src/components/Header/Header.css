@@ -1,4 +1,4 @@
-.header {
+.header-section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.header img {
+.header-section img {
   max-width: 300px;
   height: auto;
 
