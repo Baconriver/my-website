@@ -13,9 +13,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  function sendEmail(e) {
-    e.preventDefault();
-
+  function sendEmail() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
         console.log(result.text);
@@ -29,7 +27,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <h2>Contact me</h2>
-      <form onSubmit={handleSubmit(sendEmail)}>
+      <form ref={form} onSubmit={handleSubmit(sendEmail)}>
         <input
           id="contact-name"
           type="text"
