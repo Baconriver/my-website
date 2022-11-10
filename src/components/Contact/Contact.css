@@ -14,10 +14,18 @@
   border-radius: 5px;
 }
 
+.contact form input.invalid,
+.contact form textarea.invalid {
+  border-color: red;
+}
+
 .contact form textarea {
   padding: 10px;
   height: 150px;
   margin-bottom: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: inset;
 }
 
 .contact form p {

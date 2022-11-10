@@ -1,9 +1,10 @@
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../assets/constants";
-import { Form, Button, Ref, Message } from "semantic-ui-react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
@@ -17,6 +18,7 @@ const Contact = () => {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
         console.log(result.text);
+        toast.success("Email has been sent! Talk to you soon!😀");
       },
       (error) => {
         console.log(error.text);
@@ -35,6 +37,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Name"
+              className={errors?.name ? "invalid" : ""}
               {...register("name", {
                 required: true,
                 maxLength: 20,
@@ -57,6 +60,7 @@ const Contact = () => {
               id="contact-mobile"
               type="text"
               name="mobile"
+              className={errors?.mobile ? "invalid" : ""}
               {...register("mobile", {
                 pattern: /^[0-9]+$/i,
               })}
@@ -72,6 +76,7 @@ const Contact = () => {
           id="contact-email"
           type="email"
           name="email"
+          className={errors?.email ? "invalid" : ""}
           {...register("email", {
             required: true,
             pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
@@ -87,6 +92,7 @@ const Contact = () => {
           id="contact-content"
           name="message"
           placeholder="Something to say..."
+          className={errors?.message ? "invalid" : ""}
           {...register("message", {
             required: true,
             maxLength: 2000,
@@ -101,6 +107,7 @@ const Contact = () => {
         <button className="contact-submit" type="submit">
           Submit
         </button>
+        <ToastContainer position="top-right" closeOnClick theme="colored" />
       </form>
     </section>
   );
