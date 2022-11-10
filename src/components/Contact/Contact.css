@@ -2,3 +2,56 @@
   font-size: 42px;
   margin: 25px auto;
 }
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contact form input {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.contact form textarea {
+  padding: 10px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+.contact form p {
+  margin-bottom: 15px;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+
+.contact-first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-name {
+  width: 49%;
+}
+
+.contact-name input {
+  width: 100%;
+}
+
+.contact-mobile {
+  width: 49%;
+}
+
+.contact-mobile input {
+  width: 100%;
+}
+
+.contact-submit {
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+}
