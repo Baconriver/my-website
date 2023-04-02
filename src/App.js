@@ -1,7 +1,7 @@
 // Import Components
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Social from "./components/Social/Social";
 import Footer from "./components/Footer/Footer";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Experience />
       <Social />
       <Contact />

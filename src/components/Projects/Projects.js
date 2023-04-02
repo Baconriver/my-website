@@ -1,7 +1,5 @@
 // Import Assets
-import uniswap from "../assets/uniswap.png";
-import compound from "../assets/compound.png";
-import aave from "../assets/aave.png";
+import logo from "../../assets/logo192.png";
 import "./Projects.css";
 const Projects = () => {
   return (
@@ -10,16 +8,16 @@ const Projects = () => {
 
       <div className="projects__cards">
         <div className="projects__card">
-          <h3>Uniswap</h3>
-          <img src={uniswap} alt="Uniswap Swap Page" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            consectetur facere neque assumenda quasi aliquid, perferendis
-            ratione rerum dolorem.
+          <h3>My Personal Website</h3>
+          <img src={logo} alt="Uniswap Swap Page" />
+          <p className="text-3xl font-bold underline">
+            This is my personal website. I put some effort into here to showcase
+            my career and my projects. The website hosted on fleek.co and AWS.
+            Hope you like it.
           </p>
 
           <a
-            href="https://uniswap.org/"
+            href="https://henryj.link/"
             target="_blank"
             className="button"
             rel="noreferrer"
@@ -27,7 +25,7 @@ const Projects = () => {
             Site
           </a>
           <a
-            href="https://github.com/Uniswap/v2-core"
+            href="https://github.com/Baconriver/my-website"
             target="_blank"
             className="button"
             rel="noreferrer"
@@ -38,7 +36,7 @@ const Projects = () => {
 
         <div className="projects__card">
           <h3>Compound</h3>
-          <img src={compound} alt="Compound Landing Page" />
+          <img src={logo} alt="Compound Landing Page" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
             consectetur facere neque assumenda quasi aliquid, perferendis
@@ -65,7 +63,7 @@ const Projects = () => {
 
         <div className="projects__card">
           <h3>Aave</h3>
-          <img src={aave} alt="Aave Landing Page" />
+          <img src={logo} alt="Aave Landing Page" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
             consectetur facere neque assumenda quasi aliquid, perferendis

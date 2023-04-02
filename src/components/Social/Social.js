@@ -1,7 +1,9 @@
 import "./Social.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+// import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import resume from "../../assets/Henry_Jiang.pdf";
+
 const Social = () => {
   return (
     <div className="social" id="socials">
@@ -23,13 +25,9 @@ const Social = () => {
       >
         <FontAwesomeIcon icon={faGithub} /> Github
       </a>
-      <a
-        href="/src/assets/Henry_Jiang.pdf"
-        download="Henry_Jiang.pdf"
-        className="button"
-      >
+      {/* <a href={resume} download="Henry_Jiang.pdf" className="button">
         <FontAwesomeIcon icon={faFileLines} /> Resume
-      </a>
+      </a> */}
     </div>
   );
 };

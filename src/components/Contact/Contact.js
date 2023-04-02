@@ -105,7 +105,7 @@ const Contact = () => {
           <p className="error-message">Message is too long</p>
         )}
         <button className="contact-submit" type="submit">
-          Submit
+          Send
         </button>
         <ToastContainer position="top-right" closeOnClick theme="colored" />
       </form>
