@@ -1,16 +1,18 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(80, 80, 80);
+  background-color: #fffff7;
   height: 50px;
 }
 
 .navbar-myname {
-  color: white;
+  color: #0e7bd3;
   font-weight: bold;
   display: flex;
   align-items: center;
   cursor: pointer;
+  will-change: transform;
+  transition: transform 450ms;
 }
 
 .navbar-socials-container {
@@ -20,6 +22,16 @@
 
 .navbar-socials-button {
   padding: 5px 10px;
-  color: white;
+  color: #0e7bd3;
   cursor: pointer;
+  font-weight: bold;
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+.navbar-myname:hover,
+.navbar-socials-button:hover {
+  transition: transform 125ms;
+  transform: translateY(-5px);
+  font-weight: bolder;
 }

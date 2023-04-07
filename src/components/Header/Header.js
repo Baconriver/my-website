@@ -1,13 +1,13 @@
 import "./Header.css";
 const Header = () => {
+  function scrollTo(sectionId) {
+    const elem = document.getElementById(sectionId);
+    elem.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <section className="header-section">
-      {/* <img src={profile} alt="Henry Jiang" /> */}
-
-      <div className="header-content">
+      <div className="header-content" onClick={() => scrollTo("about")}>
         <h1>Hi, I'm Henry Jiang</h1>
-        {/* <p>Software Engineer</p> */}
-        {/* <button className="button">Get In Touch</button> */}
       </div>
     </section>
   );

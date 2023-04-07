@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar" id="navbar">
-      <div className="navbar-myname" onClick={() => scrollTo("navbar")}>
+      <div className="navbar-myname" onClick={() => scrollTo("about")}>
         HenryJ
       </div>
       <div className="navbar-socials-container">
@@ -19,13 +19,17 @@ const Navbar = () => {
         </div>
         <div
           className="navbar-socials-button"
+          onClick={() => scrollTo("projects")}
+        >
+          My projects
+        </div>
+        <div
+          className="navbar-socials-button"
           onClick={() => scrollTo("experience")}
         >
           Experience
         </div>
-        {/* <div className="navbar-socials-button" onClick={scrollTo("projects")}>
-          My projects
-        </div> */}
+
         <div
           className="navbar-socials-button"
           onClick={() => scrollTo("socials")}
