@@ -1,6 +1,7 @@
 .projects h2 {
   font-size: 42px;
   margin: 25px auto;
+  color: #0e7bd3;
 }
 
 .projects p {
@@ -9,15 +10,14 @@
   max-width: 50ch;
 }
 
-.projects__cards {
+.projects-cards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
-.projects__card {
+.projects-card {
   max-width: 350px;
 
   padding: 20px;
@@ -26,18 +26,19 @@
   border-radius: 8px;
 }
 
-.projects__card h3 {
+.projects-card h3 {
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.projects__card p {
+.projects-card p {
   font-size: 16px;
   margin: 20px 0;
 }
 
-.projects__card img {
+.projects-card img {
   width: 100%;
   height: auto;
   margin: 20px 0 10px;
@@ -45,6 +46,11 @@
   border-radius: 8px;
 }
 
-.projects__card .button {
+.projects-card .button {
   margin: 10px 5px 0;
+}
+
+.projects-card-buttons {
+  display: flex;
+  justify-content: center;
 }

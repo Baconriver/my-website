@@ -12,6 +12,9 @@
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
+  border-width: 2px;
+  border-color: #0e7bd3;
+  background-color: #fffff7;
 }
 
 .contact form input.invalid,
@@ -26,6 +29,12 @@
   border-radius: 5px;
   border-width: 2px;
   border-style: inset;
+  border-color: #0e7bd3;
+  background-color: #fffff7;
+}
+
+.contact form textarea:focus {
+  border-color: #0e7bd3;
 }
 
 .contact form p {

@@ -1,4 +1,6 @@
 import selfie from "../../assets/selfie.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./About.css";
 const About = () => {
   return (
@@ -11,7 +13,32 @@ const About = () => {
           I'm confident to handle any tasks during the whole web development
           process.
         </p>
-        <img src={selfie} alt="selfie" className="selfie"></img>
+        <div className="about-flip-card">
+          <div className="about-flip-card-inner">
+            <div className="about-flip-card-front">
+              <img src={selfie} alt="selfie" className="selfie"></img>
+            </div>
+            <div className="about-flip-card-back">
+              <div></div>
+              <a
+                href="https://www.linkedin.com/in/hejianghenry/"
+                className="about-flip-card-back-button"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} /> Linkedin
+              </a>
+              <a
+                href="https://github.com/Baconriver"
+                className="about-flip-card-back-button"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} /> Github
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
