@@ -13,17 +13,17 @@
 .projects-cards {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .projects-card {
   max-width: 350px;
-
   padding: 20px;
-
-  border: 1px solid #0088bb;
+  border: 2px solid #0088bb;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects-card h3 {
@@ -48,9 +48,15 @@
 
 .projects-card .button {
   margin: 10px 5px 0;
+  background-color: #0e7bd3;
+}
+
+.projects-card .button:hover {
+  background-color: #1a8ee0;
 }
 
 .projects-card-buttons {
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }

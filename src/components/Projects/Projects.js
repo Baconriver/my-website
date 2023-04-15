@@ -10,9 +10,9 @@ const Projects = () => {
         <div className="projects-card">
           <h3>My Website</h3>
           <img src={logo} alt="Uniswap Swap Page" />
-          <p className="text-3xl font-bold underline">
-            This is my personal website. I put some effort into here to showcase
-            my career and my projects.
+          <p>
+            This is my personal website. A place to showcase my experience and
+            my projects.
           </p>
           <div className="projects-card-buttons">
             <a
@@ -35,7 +35,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-card">
-          <h3>Aroundme.com</h3>
+          <h3>AreaSnap.com</h3>
           <img src={logo} alt="Compound Landing Page" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
@@ -43,22 +43,9 @@ const Projects = () => {
             ratione rerum dolorem.
           </p>
           <div className="projects-card-buttons">
-            <a
-              href="https://compound.finance/"
-              target="_blank"
-              className="button"
-              rel="noreferrer"
-            >
+            <a href="" target="_blank" className="button" rel="noreferrer">
               Site
             </a>
-            {/* <a
-              href="https://github.com/compound-finance/compound-protocol"
-              target="_blank"
-              className="button"
-              rel="noreferrer"
-            >
-              Code
-            </a> */}
           </div>
         </div>
         <div className="projects-card">
@@ -70,22 +57,9 @@ const Projects = () => {
             ratione rerum dolorem.
           </p>
           <div className="projects-card-buttons">
-            <a
-              href="https://aave.com/"
-              target="_blank"
-              className="button"
-              rel="noreferrer"
-            >
+            <a href="" target="_blank" className="button" rel="noreferrer">
               Site
             </a>
-            {/* <a
-              href="https://github.com/aave/aave-v3-core"
-              target="_blank"
-              className="button"
-              rel="noreferrer"
-            >
-              Code
-            </a> */}
           </div>
         </div>
       </div>

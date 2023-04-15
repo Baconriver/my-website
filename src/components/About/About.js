@@ -8,10 +8,12 @@ const About = () => {
       <h2>About Me</h2>
       <div className="about-container">
         <p className="about-text">
-          I'm a passionate full stack developer lives in the Great Adelaide
-          Area. With nearly 5 years of full stack web development experience,
-          I'm confident to handle any tasks during the whole web development
-          process.
+          As a passionate Full Stack Developer, I bring nearly 5 years of
+          experience in web development. Skilled in handling tasks throughout
+          the development process, I consistently deliver high-quality,
+          user-friendly web experiences. Committed to staying current with
+          industry trends, I excel in teamwork and communication, eagerly
+          contributing to projects and turning innovative ideas into reality.
         </p>
         <div className="about-flip-card">
           <div className="about-flip-card-inner">

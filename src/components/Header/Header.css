@@ -17,7 +17,7 @@
 
 .header-content h1 {
   font-size: 48px;
-  color: #fffff7;
+  color: #fdfdfd;
   will-change: transform;
   transition: transform 450ms;
   cursor: pointer;

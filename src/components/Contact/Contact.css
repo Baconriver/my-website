@@ -1,6 +1,7 @@
 .contact h2 {
   font-size: 42px;
   margin: 25px auto;
+  color: #0e7bd3;
 }
 
 .contact form {
@@ -14,7 +15,8 @@
   border-radius: 5px;
   border-width: 2px;
   border-color: #0e7bd3;
-  background-color: #fffff7;
+  background-color: #fdfdfd;
+  border-style: solid;
 }
 
 .contact form input.invalid,
@@ -28,13 +30,16 @@
   margin-bottom: 5px;
   border-radius: 5px;
   border-width: 2px;
-  border-style: inset;
   border-color: #0e7bd3;
-  background-color: #fffff7;
+  border-style: solid;
+  background-color: #fdfdfd;
 }
 
-.contact form textarea:focus {
-  border-color: #0e7bd3;
+.contact form textarea:focus,
+.contact form input:focus,
+.contact form textarea:active {
+  border-color: #1a8ee0;
+  outline: none;
 }
 
 .contact form p {
@@ -71,4 +76,14 @@
   width: auto;
   padding: 10px;
   cursor: pointer;
+  background-color: #0e7bd3;
+  color: #fdfdfd;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-submit:hover {
+  background-color: #1a8ee0;
 }
