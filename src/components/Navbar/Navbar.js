@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import henryjLogo from "../../assets/henryj-logo.png";
 const Navbar = () => {
   function scrollTo(sectionId) {
     const elem = document.getElementById(sectionId);
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="navbar" id="navbar">
       <div className="navbar-myname" onClick={() => scrollTo("about")}>
-        HenryJ
+        <img className="navbar-logo" src={henryjLogo} alt="HenryJ" />
       </div>
       <div className="navbar-socials-container">
         <div

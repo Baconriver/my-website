@@ -35,3 +35,7 @@
   transform: translateY(-5px);
   font-weight: bolder;
 }
+
+.navbar-logo {
+  height: 100%;
+}
