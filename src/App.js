@@ -7,6 +7,7 @@ import Social from "./components/Social/Social";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
+
 function App() {
   return (
     <div className="App">

@@ -5,6 +5,7 @@ import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../assets/constants";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -104,9 +105,21 @@ const Contact = () => {
         {errors?.message?.type === "maxLength" && (
           <p className="error-message">Message is too long</p>
         )}
-        <button className="contact-submit" type="submit">
+        <motion.button
+          initial={{ opacity: 0.6 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.5 },
+          }}
+          whileInView={{ opacity: 1 }}
+          className="contact-submit"
+          type="submit"
+        >
           Send
-        </button>
+        </motion.button>
+        {/* <button className="contact-submit" type="submit">
+          Send
+        </button> */}
         <ToastContainer position="top-right" closeOnClick theme="colored" />
       </form>
     </section>

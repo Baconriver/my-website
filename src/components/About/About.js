@@ -1,25 +1,47 @@
 import selfie from "../../assets/selfie.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 import "./About.css";
+import BallCanvas from "./Ball";
+import { skills } from "../../constants";
 const About = () => {
   return (
     <section className="about" id="about">
       <h2>About Me</h2>
       <div className="about-container">
-        <p className="about-text">
-          As a passionate Full Stack Developer, I bring nearly 5 years of
-          experience in web development. Skilled in handling tasks throughout
-          the development process, I consistently deliver high-quality,
-          user-friendly web experiences. Committed to staying current with
-          industry trends, I excel in teamwork and communication, eagerly
-          contributing to projects and turning innovative ideas into reality.
-        </p>
+        <div>
+          <p className="about-text">
+            As a passionate Full Stack Developer, I bring nearly 5 years of
+            experience in web development. Skilled in handling tasks throughout
+            the development process, I consistently deliver high-quality,
+            user-friendly web experiences. Committed to staying current with
+            industry trends, I excel in teamwork and communication, eagerly
+            contributing to projects and turning innovative ideas into reality.
+          </p>
+          <div className="about-balls-container">
+            {skills.map((skill) => (
+              <div className="about-ball" key={skill.name}>
+                <BallCanvas icon={skill.icon}></BallCanvas>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="about-flip-card">
           <div className="about-flip-card-inner">
-            <div className="about-flip-card-front">
+            <motion.div
+              className="about-flip-card-front"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <img src={selfie} alt="selfie" className="selfie"></img>
-            </div>
+            </motion.div>
             <div className="about-flip-card-back">
               <div></div>
               <a
