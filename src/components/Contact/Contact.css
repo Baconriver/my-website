@@ -87,3 +87,7 @@
 .contact-submit:hover {
   background-color: #1a8ee0;
 }
+
+.contact-container {
+  display: flex;
+}
