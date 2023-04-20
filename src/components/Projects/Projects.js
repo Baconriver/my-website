@@ -1,5 +1,6 @@
 // Import Assets
 import logo from "../../assets/logo192.png";
+import websiteLogo from "../../assets/henryj-website-logo.png";
 import "./Projects.css";
 import { Tilt } from "react-tilt";
 
@@ -22,7 +23,7 @@ const Projects = () => {
       <div className="projects-cards">
         <Tilt options={defaultOptions} className="projects-card">
           <h3>My Website</h3>
-          <img src={logo} alt="Uniswap Swap Page" />
+          <img src={websiteLogo} alt="My Website" />
           <p>
             This is my personal website. A place to showcase my experience and
             my projects.

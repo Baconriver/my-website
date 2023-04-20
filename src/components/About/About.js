@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import "./About.css";
 import BallCanvas from "./Ball";
-import { skills } from "../../constants";
+import { skills } from "../../assets/constants";
 
 const About = () => {
   return (
