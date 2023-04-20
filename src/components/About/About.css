@@ -1,11 +1,15 @@
 .selfie {
-  width: 400px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .about-container {
   display: flex;
   justify-content: space-between;
+}
+
+.about-container-left {
+  margin-right: 50px;
 }
 
 .about-text {

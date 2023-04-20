@@ -11,7 +11,7 @@ const About = () => {
     <section className="about" id="about">
       <h2>About Me</h2>
       <div className="about-container">
-        <div>
+        <div className="about-container-left">
           <p className="about-text">
             As a passionate Full Stack Developer, I bring 5 years of experience
             in web development. Skilled in handling tasks throughout the
@@ -44,23 +44,27 @@ const About = () => {
               <img src={selfie} alt="selfie" className="selfie"></img>
             </motion.div>
             <div className="about-flip-card-back">
-              <div></div>
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 href="https://www.linkedin.com/in/hejianghenry/"
                 className="about-flip-card-back-button"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} /> Linkedin
-              </a>
-              <a
+              </motion.a>
+
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 href="https://github.com/Baconriver"
                 className="about-flip-card-back-button"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} /> Github
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>

@@ -106,20 +106,13 @@ const Contact = () => {
           <p className="error-message">Message is too long</p>
         )}
         <motion.button
-          initial={{ opacity: 0.6 }}
-          whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.5 },
-          }}
-          whileInView={{ opacity: 1 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="contact-submit"
           type="submit"
         >
           Send
         </motion.button>
-        {/* <button className="contact-submit" type="submit">
-          Send
-        </button> */}
         <ToastContainer position="top-right" closeOnClick theme="colored" />
       </form>
     </section>

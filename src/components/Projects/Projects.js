@@ -48,7 +48,7 @@ const Projects = () => {
         </Tilt>
 
         <Tilt options={defaultOptions} className="projects-card">
-          <h3>AreaSnap.com</h3>
+          <h3>AreaSnap.com(WIP)</h3>
           <img src={logo} alt="Compound Landing Page" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
@@ -62,7 +62,7 @@ const Projects = () => {
           </div>
         </Tilt>
         <Tilt options={defaultOptions} className="projects-card">
-          <h3>My Shop</h3>
+          <h3>My Shop(WIP)</h3>
           <img src={logo} alt="Aave Landing Page" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
