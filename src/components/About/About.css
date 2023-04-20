@@ -9,7 +9,6 @@
 }
 
 .about-text {
-  width: 80%;
 }
 
 .about h2 {
@@ -90,9 +89,15 @@
 .about-balls-container {
   display: flex;
   flex-direction: row;
+  max-width: 75ch;
+
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 .about-ball {
   height: 65px;
   width: 65px;
+  margin: 20px;
 }

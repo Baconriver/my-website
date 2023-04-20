@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import "./About.css";
 import BallCanvas from "./Ball";
 import { skills } from "../../constants";
+
 const About = () => {
   return (
     <section className="about" id="about">
@@ -12,9 +13,9 @@ const About = () => {
       <div className="about-container">
         <div>
           <p className="about-text">
-            As a passionate Full Stack Developer, I bring nearly 5 years of
-            experience in web development. Skilled in handling tasks throughout
-            the development process, I consistently deliver high-quality,
+            As a passionate Full Stack Developer, I bring 5 years of experience
+            in web development. Skilled in handling tasks throughout the
+            development process, I consistently deliver high-quality,
             user-friendly web experiences. Committed to staying current with
             industry trends, I excel in teamwork and communication, eagerly
             contributing to projects and turning innovative ideas into reality.
@@ -22,7 +23,7 @@ const About = () => {
           <div className="about-balls-container">
             {skills.map((skill) => (
               <div className="about-ball" key={skill.name}>
-                <BallCanvas icon={skill.icon}></BallCanvas>
+                <BallCanvas icon={skill.icon} />
               </div>
             ))}
           </div>
