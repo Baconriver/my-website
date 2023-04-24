@@ -29,22 +29,22 @@ const Projects = () => {
             my projects.
           </p>
           <div className="projects-card-buttons">
-            <a
+            {/* <a
               href="https://henryj.link/"
               target="_blank"
               className="button"
               rel="noreferrer"
             >
               Site
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="https://github.com/Baconriver/my-website"
               target="_blank"
               className="button"
               rel="noreferrer"
             >
               Code
-            </a>
+            </a> */}
           </div>
         </Tilt>
 
