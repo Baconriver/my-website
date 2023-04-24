@@ -145,24 +145,54 @@
 
 /* Landscape */
 @media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
   .about-balls-container {
     max-width: 100%;
     margin: 15px 0;
+  }
+
+  .about-ball {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
   }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
   .about-balls-container {
     max-width: 100%;
     margin: 15px 0;
+  }
+
+  .about-ball {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
   }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
   .about-balls-container {
     max-width: 100%;
     margin: 15px 0;
+  }
+
+  .about-ball {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
   }
 }
