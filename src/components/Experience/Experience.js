@@ -84,7 +84,7 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(211 237 255)", color: "#0e7bd3" }}
           contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
-          date="2015 - 2017"
+          date="2015 - 2017 (2 yrs)"
           icon={
             <Icon iconLink={adelaideUniIcon} alt="The University of Adelaide" />
           }
@@ -98,7 +98,7 @@ const Experience = () => {
           className="vertical-timeline-element--education"
           contentStyle={{ background: "rgb(211 237 255)", color: "#0e7bd3" }}
           contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
-          date="2011 - 2015"
+          date="2011 - 2015 (4 yrs)"
           icon={<Icon iconLink={hkbuIcon} alt="Hong Kong Baptist University" />}
         >
           <h3 className="vertical-timeline-element-title">

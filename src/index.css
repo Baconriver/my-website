@@ -53,7 +53,7 @@ code {
 }
 
 /* Portrait */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) and (orientation: portrait) {
   .experience,
   .social,
   .contact,
@@ -76,7 +76,7 @@ code {
 }
 
 /* Landscape */
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape) {
   .experience,
   .social,
   .contact,
@@ -99,9 +99,9 @@ code {
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 }

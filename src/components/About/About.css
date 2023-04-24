@@ -33,6 +33,8 @@
   background-color: transparent;
   width: 400px;
   height: 533px;
+
+  aspect-ratio: 1 / 1.33;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -107,7 +109,7 @@
 }
 
 /* Portrait */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) {
   .about-container {
     display: flex;
     flex-direction: column;
@@ -135,11 +137,9 @@
   }
 
   .about-flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    perspective: 1000px;
-    cursor: pointer;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1.33;
   }
 }
 
@@ -159,10 +159,16 @@
     width: 40px;
     margin: 10px;
   }
+
+  .about-flip-card {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1.33;
+  }
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
   .about-container {
     display: flex;
     flex-direction: column;
@@ -176,6 +182,11 @@
     height: 40px;
     width: 40px;
     margin: 10px;
+  }
+  .about-flip-card {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1.33;
   }
 }
 
@@ -194,5 +205,10 @@
     height: 40px;
     width: 40px;
     margin: 10px;
+  }
+  .about-flip-card {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1.33;
   }
 }

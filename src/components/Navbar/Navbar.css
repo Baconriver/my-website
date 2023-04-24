@@ -70,7 +70,7 @@
 }
 
 /* Portrait */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) and (orientation: portrait) {
   .navbar {
     display: none;
   }
@@ -81,7 +81,7 @@
 }
 
 /* Landscape */
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape) {
   .navbar {
     display: none;
   }
@@ -91,7 +91,7 @@
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .navbar {
     display: flex;
   }
@@ -105,7 +105,7 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .navbar {
     display: flex;
   }
@@ -117,7 +117,7 @@
   }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-device-width: 1024px) {
   .navbar {
     display: flex;
   }

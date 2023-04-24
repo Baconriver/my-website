@@ -28,26 +28,26 @@
 }
 
 /* Portrait */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) and (orientation: portrait) {
   .first-experience .vertical-timeline-element-date {
     color: #fdfdfd;
   }
 }
 
 /* Landscape */
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape) {
   .first-experience .vertical-timeline-element-date {
     color: #fdfdfd;
   }
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .first-experience .vertical-timeline-element-date {
     color: #fdfdfd;
   }
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 }

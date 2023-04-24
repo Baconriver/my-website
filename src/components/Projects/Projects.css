@@ -12,19 +12,21 @@
 
 .projects-cards {
   display: flex;
-  justify-content: space-between;
   align-items: stretch;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 50px;
+  justify-content: center;
 }
 
 .projects-card {
   max-width: 350px;
+  width: 30%;
   padding: 20px;
   border: 2px solid #0088bb;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 
 .projects-card h3 {
@@ -63,7 +65,7 @@
 }
 
 /* Landscape */
-@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media (max-device-width: 768px) and (orientation: portrait) {
   .projects-cards {
     flex-direction: column;
   }
@@ -76,7 +78,7 @@
 }
 
 /* Landscape */
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+@media (max-device-width: 768px) and (orientation: landscape) {
   .projects-cards {
     flex-direction: column;
   }
@@ -89,7 +91,7 @@
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .projects-cards {
     flex-direction: column;
   }
@@ -102,7 +104,7 @@
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .projects-cards {
     flex-direction: column;
   }

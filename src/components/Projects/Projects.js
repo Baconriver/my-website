@@ -49,12 +49,12 @@ const Projects = () => {
         </Tilt>
 
         <Tilt options={defaultOptions} className="projects-card">
-          <h3>AreaSnap.com(WIP)</h3>
+          <h3>AreaSnap.com</h3>
           <img src={logo} alt="Compound Landing Page" />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            consectetur facere neque assumenda quasi aliquid, perferendis
-            ratione rerum dolorem.
+            (WIP)Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis consectetur facere neque assumenda quasi aliquid,
+            perferendis ratione rerum dolorem.
           </p>
           {/* <div className="projects-card-buttons">
             <a href="" target="_blank" className="button" rel="noreferrer">
@@ -63,12 +63,12 @@ const Projects = () => {
           </div> */}
         </Tilt>
         <Tilt options={defaultOptions} className="projects-card">
-          <h3>My Shop(WIP)</h3>
+          <h3>My Shop</h3>
           <img src={logo} alt="Aave Landing Page" />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            consectetur facere neque assumenda quasi aliquid, perferendis
-            ratione rerum dolorem.
+            (WIP)Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis consectetur facere neque assumenda quasi aliquid,
+            perferendis ratione rerum dolorem.
           </p>
           {/* <div className="projects-card-buttons">
             <a href="" target="_blank" className="button" rel="noreferrer">
