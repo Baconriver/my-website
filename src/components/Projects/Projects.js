@@ -56,11 +56,11 @@ const Projects = () => {
             consectetur facere neque assumenda quasi aliquid, perferendis
             ratione rerum dolorem.
           </p>
-          <div className="projects-card-buttons">
+          {/* <div className="projects-card-buttons">
             <a href="" target="_blank" className="button" rel="noreferrer">
               Site
             </a>
-          </div>
+          </div> */}
         </Tilt>
         <Tilt options={defaultOptions} className="projects-card">
           <h3>My Shop(WIP)</h3>
@@ -70,11 +70,11 @@ const Projects = () => {
             consectetur facere neque assumenda quasi aliquid, perferendis
             ratione rerum dolorem.
           </p>
-          <div className="projects-card-buttons">
+          {/* <div className="projects-card-buttons">
             <a href="" target="_blank" className="button" rel="noreferrer">
               Site
             </a>
-          </div>
+          </div> */}
         </Tilt>
       </div>
     </section>
