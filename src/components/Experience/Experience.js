@@ -18,7 +18,7 @@ const Experience = () => {
       <h2>Experience</h2>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work first-experience"
           contentStyle={{ background: "rgb(0 138 248)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid rgb(0 138 248)" }}
           date="Jul 2021 - present (1 yr 10 mos)"

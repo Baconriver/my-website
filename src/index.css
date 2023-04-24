@@ -52,6 +52,56 @@ code {
   height: auto;
 }
 
-.navbar {
-  padding: 10px;
+/* Portrait */
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+  .experience,
+  .social,
+  .contact,
+  .footer,
+  .projects,
+  .about {
+    padding: 20px;
+    height: auto;
+  }
+
+  .header-section {
+    padding: 0;
+    height: 100vh;
+    background-size: auto;
+  }
+
+  .header-section h1 {
+    font-size: x-large !important;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  .experience,
+  .social,
+  .contact,
+  .footer,
+  .projects,
+  .about {
+    padding: 0;
+    height: auto;
+  }
+
+  .header-section {
+    padding: 0;
+    height: 100vh;
+    background-size: auto;
+  }
+
+  .header-section h1 {
+    font-size: x-large !important;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 }

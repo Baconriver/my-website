@@ -91,3 +91,39 @@
 .contact-container {
   display: flex;
 }
+
+/* Portrait */
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
