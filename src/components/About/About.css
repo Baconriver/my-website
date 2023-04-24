@@ -95,7 +95,6 @@
   display: flex;
   flex-direction: row;
   max-width: 75ch;
-
   flex-wrap: wrap;
   margin-top: 50px;
   justify-content: center;
@@ -125,13 +124,8 @@
   }
 
   .about-balls-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 35ch;
-
-    flex-wrap: wrap;
-    margin-top: 15px;
-    justify-content: center;
+    max-width: 100%;
+    margin: 15px 0;
   }
 
   .about-ball {
@@ -151,12 +145,24 @@
 
 /* Landscape */
 @media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  .about-balls-container {
+    max-width: 100%;
+    margin: 15px 0;
+  }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .about-balls-container {
+    max-width: 100%;
+    margin: 15px 0;
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .about-balls-container {
+    max-width: 100%;
+    margin: 15px 0;
+  }
 }
