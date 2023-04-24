@@ -31,12 +31,12 @@ const Navbar = () => {
           Experience
         </div>
 
-        <div
+        {/* <div
           className="navbar-socials-button"
           onClick={() => scrollTo("socials")}
         >
           Socials
-        </div>
+        </div> */}
         <div
           className="navbar-socials-button"
           onClick={() => scrollTo("contact")}
