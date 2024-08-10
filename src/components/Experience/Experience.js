@@ -41,7 +41,7 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(0 138 248)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(0 138 248)' }}
-          date="Jul 2021 - present (1 yr 10 mos)"
+          date="Jul 2021 - Sep 2023 (2 yr 2 mos)"
           icon={<Icon iconLink={honeywellIcon} alt="Honeywell" />}
         >
           <h3 className="vertical-timeline-element-title">
