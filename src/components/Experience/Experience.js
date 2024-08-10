@@ -1,17 +1,18 @@
-import "./Experience.css";
+import './Experience.css';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import honeywellIcon from "../../assets/Honeywell.jpg";
-import adelaideMRIIcon from "../../assets/adelaideMRI.jpg";
-import opentuteIcon from "../../assets/opentute.jpg";
-import adelaideUniIcon from "../../assets/adelaideUni.jpg";
-import hkbuIcon from "../../assets/hkbu.jpg";
-import Icon from "./Icon";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBabyCarriage } from "@fortawesome/free-solid-svg-icons";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import siemensIcon from '../../assets/siemens.jpg';
+import honeywellIcon from '../../assets/honeywell.jpg';
+import adelaideMRIIcon from '../../assets/adelaideMRI.jpg';
+import opentuteIcon from '../../assets/opentute.jpg';
+import adelaideUniIcon from '../../assets/adelaideUni.jpg';
+import hkbuIcon from '../../assets/hkbu.jpg';
+import Icon from './Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBabyCarriage } from '@fortawesome/free-solid-svg-icons';
 const Experience = () => {
   return (
     <div className="experience" id="experience">
@@ -19,8 +20,27 @@ const Experience = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work first-experience"
-          contentStyle={{ background: "rgb(0 138 248)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(0 138 248)" }}
+          contentStyle={{ background: 'rgb(0 138 248)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(0 138 248)' }}
+          date="Sep 2023 - present (11 mos)"
+          icon={<Icon iconLink={siemensIcon} alt="Siemens" />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Engineer II(Front End)
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Melbourne, AU</h4>
+          <ul>
+            <li>
+              Led front-end development efforts and driving the transformation
+              of Siemens Predictor from a desktop application to a web-based
+              platform. (TS, Vue, React, Rest API)
+            </li>
+          </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: 'rgb(0 138 248)', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(0 138 248)' }}
           date="Jul 2021 - present (1 yr 10 mos)"
           icon={<Icon iconLink={honeywellIcon} alt="Honeywell" />}
         >
@@ -38,10 +58,10 @@ const Experience = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "rgb(211 237 255)",
-            color: "#0e7bd3",
+            background: 'rgb(211 237 255)',
+            color: '#0e7bd3',
           }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(211 237 255)' }}
           date="May 2019 - Jul 2021 (2 yrs 3 mos)"
           icon={<Icon iconLink={adelaideMRIIcon} alt="AdelaideMRI" />}
         >
@@ -64,8 +84,8 @@ const Experience = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(211 237 255)", color: "#0e7bd3" }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
+          contentStyle={{ background: 'rgb(211 237 255)', color: '#0e7bd3' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(211 237 255)' }}
           date="Jan 2018 - May2019 (1 yr 5 mos)"
           icon={<Icon iconLink={opentuteIcon} alt="Opentute" />}
         >
@@ -82,8 +102,8 @@ const Experience = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(211 237 255)", color: "#0e7bd3" }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
+          contentStyle={{ background: 'rgb(211 237 255)', color: '#0e7bd3' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(211 237 255)' }}
           date="2015 - 2017 (2 yrs)"
           icon={
             <Icon iconLink={adelaideUniIcon} alt="The University of Adelaide" />
@@ -96,8 +116,8 @@ const Experience = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          contentStyle={{ background: "rgb(211 237 255)", color: "#0e7bd3" }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(211 237 255)" }}
+          contentStyle={{ background: 'rgb(211 237 255)', color: '#0e7bd3' }}
+          contentArrowStyle={{ borderRight: '7px solid rgb(211 237 255)' }}
           date="2011 - 2015 (4 yrs)"
           icon={<Icon iconLink={hkbuIcon} alt="Hong Kong Baptist University" />}
         >
@@ -107,7 +127,7 @@ const Experience = () => {
           <h4 className="vertical-timeline-element-subtitle">Hong Kong, CN</h4>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faBabyCarriage} />}
         />
       </VerticalTimeline>

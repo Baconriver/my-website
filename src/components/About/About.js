@@ -1,10 +1,10 @@
-import selfie from "../../assets/selfie.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion";
-import "./About.css";
-import BallCanvas from "./Ball";
-import { skills } from "../../assets/constants";
+import selfie from '../../assets/selfie.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
+import './About.css';
+import BallCanvas from './Ball';
+import { skills } from '../../assets/constants';
 
 const About = () => {
   return (
@@ -13,9 +13,9 @@ const About = () => {
       <div className="about-container">
         <div className="about-container-left">
           <p className="about-text">
-            As a passionate Full Stack Developer, I bring 5 years of experience
-            in web development. Skilled in handling tasks throughout the
-            development process, I consistently deliver high-quality,
+            As a passionate Software Engineer, I bring nearly 7 years of
+            experience in web development. Skilled in handling tasks throughout
+            the development process, I consistently deliver high-quality,
             user-friendly web experiences. Committed to staying current with
             industry trends, I excel in teamwork and communication, eagerly
             contributing to projects and turning innovative ideas into reality.
@@ -46,7 +46,7 @@ const About = () => {
             <div className="about-flip-card-back">
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                 href="https://www.linkedin.com/in/hejianghenry/"
                 className="about-flip-card-back-button"
                 target="_blank"
@@ -57,7 +57,7 @@ const About = () => {
 
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                 href="https://github.com/Baconriver"
                 className="about-flip-card-back-button"
                 target="_blank"
