@@ -22,11 +22,11 @@ const Experience = () => {
           className="vertical-timeline-element--work first-experience"
           contentStyle={{ background: 'rgb(0 138 248)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(0 138 248)' }}
-          date="Sep 2023 - present (11 mos)"
+          date="Sep 2023 - present (1 yr 3 mos)"
           icon={<Icon iconLink={siemensIcon} alt="Siemens" />}
         >
           <h3 className="vertical-timeline-element-title">
-            Software Engineer II(Front End)
+            Senior Front End Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Melbourne, AU</h4>
           <ul>
@@ -41,7 +41,7 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(0 138 248)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(0 138 248)' }}
-          date="Jul 2021 - Sep 2023 (2 yr 2 mos)"
+          date="Jul 2021 - Sep 2023 (2 yr 3 mos)"
           icon={<Icon iconLink={honeywellIcon} alt="Honeywell" />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -86,7 +86,7 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(211 237 255)', color: '#0e7bd3' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(211 237 255)' }}
-          date="Jan 2018 - May2019 (1 yr 5 mos)"
+          date="DEC 2017 - May2019 (1 yr 6 mos)"
           icon={<Icon iconLink={opentuteIcon} alt="Opentute" />}
         >
           <h3 className="vertical-timeline-element-title">
